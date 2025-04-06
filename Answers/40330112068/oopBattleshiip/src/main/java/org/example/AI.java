@@ -11,7 +11,7 @@ public class AI {
   public String move(int size) {
       Random rand = new Random();
       char col = (char) (rand.nextInt(size) + 'A');
-      int row = rand.nextInt(1,size);
+      int row = rand.nextInt(1,size + 1);
       String attack = col + "" + row;
       return attack;
 

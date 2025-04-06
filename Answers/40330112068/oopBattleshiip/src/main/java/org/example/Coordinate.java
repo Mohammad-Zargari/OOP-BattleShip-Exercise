@@ -16,11 +16,11 @@ public class Coordinate {
         int row = Integer.parseInt(rowstr);
 
         if (input.length() == 2) {
-            return (col >= 'A' && col <= 'J') && (row >= 0 && row <= size);
+            return (col >= 'A' && col < 'A' + size) && (row >= 0 && row <= size);
         }
 
         if (input.length() == 3) {
-            return (col >= 'A' && col <= 'J') && (row >= 1 && row <= size);
+            return (col >= 'A' && col < 'A' + size) && (row >= 1 && row <= size);
         }
 
         return false;
